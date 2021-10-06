@@ -61,7 +61,8 @@ const initializeScroll = () => {
     'scroll',
     throttle(() => {
       handleScroll($aosElements, options.once);
-    }, options.throttleDelay)
+    }, options.throttleDelay),
+    { passive: true }
   );
 
   return $aosElements;
