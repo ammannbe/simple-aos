@@ -12,7 +12,7 @@
 
 ## Specifications
 
-  - AOS version:
+  - Simple AOS version:
   - OS:
   - Browser:
 
