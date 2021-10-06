@@ -1,33 +1,29 @@
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var autoprefixer = require('autoprefixer');
+const path = require("path")
 
 module.exports = {
-  entry: './src/js/aos.js',
-  output: {
-    path: './dist',
-    publicPath: 'dist/',
-    filename: 'aos.js',
-    library: 'AOS',
-    libraryTarget: 'umd',
-  },
-  devServer: {
-    contentBase: 'demo/'
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader'
-      },
-      {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap!sass-loader!postcss-loader")
-      }
-    ]
-  },
-  plugins: [
-    new ExtractTextPlugin('aos.css'),
-    new webpack.optimize.UglifyJsPlugin()
-  ]
+    entry: path.resolve(__dirname, "src/js/aos.js"),
+    output: {
+        path: path.resolve(__dirname, "dist"),
+        filename: "aos.js",
+        library: "$",
+        libraryTarget: "umd",
+    },
+    module: {
+        rules: [
+            {
+                test: /\.(js)$/,
+                exclude: /node_modules/,
+                use: "babel-loader",
+            },
+            {
+                test: /\.(scss)$/,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader",
+                ],
+            },
+        ],
+    },
+    mode: "production",
 }

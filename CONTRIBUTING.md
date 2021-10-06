@@ -1,43 +1,18 @@
-# Contributing to AOS
+# Contributing to Simple AOS
 
 ## Bugs
 
-Found a bug? Have a problem with AOS? Please check past issues, maybe someone already had that problem. If you don't find similar issue create new, but remember to add accurate informations so that I can dig into it straight away. If it's possible add CodePen example that presents called issue.
+Found a bug? Have a problem with Simple AOS? Please check past issues, maybe someone already had that problem. If you don't find similar issue create new, but remember to add accurate informations so that I can dig into it straight away. If it's possible add CodePen example that presents called issue.
 
 ## Development process
 
-AOS is built using webpack.
-
 ### Setup
 
-- Install all dependencies: 
-  
-  ```
+- Install all dependencies:
+
+  ```bash
   npm install
   ```
-
-- Run dev server:
-  
-  ```
-  npm run dev
-  ```
-
-  This will run local webpack-dev-server and build AOS automatically.
-
-- Open browser and head to: 
-  [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/)
-  Server loads content from `demo` folder.
-  
-Now you are ready to play with AOS. Browser should reload automatically as you change code in `src` folder.
-
-### Testing
-
-Before you create Pull Request make sure all tests are passing.
-
-In order to do so run:
-```
-npm test
-```
 
 ### Commiting changes
 
