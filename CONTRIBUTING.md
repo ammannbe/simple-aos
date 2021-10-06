@@ -14,6 +14,12 @@ Found a bug? Have a problem with Simple AOS? Please check past issues, maybe som
   npm install
   ```
 
+- Build the package:
+
+  ```bash
+  npm run buld
+  ```
+
 ### Commiting changes
 
 If all tests are passing then you're good to go. Commit your changes, but remember to **not commit `dist` folder**.
