@@ -5,8 +5,11 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "aos.js",
-        library: "$",
-        libraryTarget: "umd",
+        library: {
+            name: "AOS",
+            type: "umd",
+            export: ['default']
+        }
     },
     module: {
         rules: [
