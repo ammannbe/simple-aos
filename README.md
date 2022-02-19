@@ -1,5 +1,5 @@
-[![NPM version](https://img.shields.io/npm/v/aos/next.svg?style=flat)](https://npmjs.org/package/aos)
-[![NPM downloads](https://img.shields.io/npm/dm/aos.svg?style=flat)](https://npmjs.org/package/aos)
+[![NPM version](https://img.shields.io/npm/v/simple-aos)](https://npmjs.org/package/simple-aos)
+[![NPM downloads](https://img.shields.io/npm/dm/simple-aos)](https://npmjs.org/package/simple-aos)
 
 This package is based on https://github.com/michalsnik/aos which seems not supported anymore
 

@@ -17,7 +17,7 @@ Found a bug? Have a problem with AOS? Please check past issues, maybe someone al
 - Build the package:
 
   ```bash
-  npm run buld
+  npm run build
   ```
 
 ### Commiting changes
