@@ -5,11 +5,19 @@
     <title>Simple AOS - Animate on scroll library</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/styles.css" />
-    <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="anchor.html">Anchor</a></li>
+        <li><a href="animatecss.html">Animate.css</a></li>
+        <li><a href="async.html">Async</a></li>
+        <li><a href="offset.html" class="active">Offset</a></li>
+        <li><a href="once.html">Once</a></li>
+      </ul>
+    </nav>
+
     <div class="aos-all">
       <div data-id="1" class="aos-item" data-aos="fade-up"></div>
       <div data-id="2" class="aos-item" data-aos="fade-up"></div>
@@ -48,7 +56,7 @@
       <div data-id="27" class="aos-item" data-aos="zoom-in-up" data-aos-offset="150"></div>
     </div>
 
-    <script src="../dist/aos.js"></script>
+    <script src="https://unpkg.com/simple-aos@latest/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
