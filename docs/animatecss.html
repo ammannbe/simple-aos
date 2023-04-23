@@ -5,7 +5,7 @@
     <title>Simple AOS - Animate on scroll library</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
       [data-aos] {
         visibility: hidden;
@@ -14,11 +14,19 @@
         visibility: visible;
       }
     </style>
-    <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="anchor.html">Anchor</a></li>
+        <li><a href="animatecss.html" class="active">Animate.css</a></li>
+        <li><a href="async.html">Async</a></li>
+        <li><a href="offset.html">Offset</a></li>
+        <li><a href="once.html">Once</a></li>
+      </ul>
+    </nav>
+
     <div class="aos-all">
       <div data-id="1" class="aos-item" data-aos="fadeInUp"></div>
       <div data-id="2" class="aos-item" data-aos="fadeInUp"></div>
@@ -46,7 +54,7 @@
       <div data-id="24" class="aos-item" data-aos="fadeInUp"></div>
     </div>
 
-    <script src="../dist/aos.js"></script>
+    <script src="https://unpkg.com/simple-aos@master/dist/aos.js"></script>
     <script>
       AOS.init({
         useClassNames: true,

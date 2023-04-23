@@ -1,5 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: Helvetica,Tahoma;
+  font-family: Helvetica, Tahoma;
 }
 
 *,
@@ -8,13 +13,49 @@ body {
   box-sizing: border-box;
 }
 
+nav {
+  z-index: 1;
+  position: relative;
+}
+
+nav > ul {
+  display: flex;
+  width: 1000px;
+  max-width: 98%;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+nav > ul > li {
+  list-style-type: none;
+}
+
+nav > ul > li > a {
+  padding: 0.75em 1.25em;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+nav > ul > li > a.active {
+  background: #1da4e2;
+  color: #fff;
+}
+
+nav > ul > li > a:hover {
+  background: #1da4e2;
+  color: #fff;
+}
+
 .scroll-counter {
   position: fixed;
   top: 0;
   right: 0;
   padding: 15px;
   color: white;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .aos-all {
@@ -84,7 +125,7 @@ body {
   top: 0;
 }
 
-.aos-anchors__sidebar > div {
+.aos-anchors__sidebar>div {
   padding: 5px 10px;
   background: #f1f1f1;
 }
@@ -94,7 +135,7 @@ body {
   margin: 50px auto;
 }
 
-.aos-anchors__content > div {
+.aos-anchors__content>div {
   position: relative;
   width: 100%;
   height: 300px;
@@ -105,7 +146,7 @@ body {
   color: #333;
 }
 
-.aos-anchors__content > div::before {
+.aos-anchors__content>div::before {
   content: '';
   position: absolute;
   left: 0;
@@ -113,34 +154,34 @@ body {
   height: 2px;
 }
 
-.aos-anchors__content > div::after {
+.aos-anchors__content>div::after {
   content: attr(data-anchor-id);
   position: relative;
   background-color: #f1f1f1;
 }
 
-.aos-anchors__content > div[data-placement$="-bottom"]::before {
+.aos-anchors__content>div[data-placement$="-bottom"]::before {
   background-color: red;
 }
 
-.aos-anchors__content > div[data-placement$="-center"]::before {
+.aos-anchors__content>div[data-placement$="-center"]::before {
   background-color: green;
 }
 
-.aos-anchors__content > div[data-placement$="-top"]::before {
+.aos-anchors__content>div[data-placement$="-top"]::before {
   background-color: blue;
 }
 
-.aos-anchors__content > div[data-placement^="top-"]::before {
+.aos-anchors__content>div[data-placement^="top-"]::before {
   top: 0;
 }
 
-.aos-anchors__content > div[data-placement^="center-"]::before {
+.aos-anchors__content>div[data-placement^="center-"]::before {
   top: 0;
   bottom: 0;
   margin: auto;
 }
 
-.aos-anchors__content > div[data-placement^="bottom-"]::before {
+.aos-anchors__content>div[data-placement^="bottom-"]::before {
   bottom: 0;
 }

@@ -5,7 +5,7 @@ This package is based on https://github.com/michalsnik/aos which seems not suppo
 
 ---
 
-### 🚀 [Demo](http://michalsnik.github.io/aos/)
+### 🚀 [Demo](http://ammannbe.github.io/simple-aos/)
 
 ### 🌟 Codepen Examples
 
